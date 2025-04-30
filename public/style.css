@@ -1,0 +1,119 @@
+/* Global Styles */
+:root {
+  --primary-color: #4285f4;
+  --secondary-color: #34a853;
+  --danger-color: #ea4335;
+  --gray-color: #f8f9fa;
+}
+
+body {
+  background-color: #edeef1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #3367d6;
+  border-color: #3367d6;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.navbar {
+  box-shadow: 0 2px 10px rgb(0, 0, 0);
+}
+
+/* Task item styles */
+.task-item {
+  transition: all 0.3s ease;
+  border-left: 5px solid transparent;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.completed {
+  border-left-color: var(--secondary-color);
+  background-color: rgba(52, 168, 83, 0.05);
+}
+
+.task-item.completed .task-title {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.task-item.active {
+  border-left-color: var(--primary-color);
+}
+
+.task-item .task-actions {
+  visibility: hidden;
+}
+
+.task-item:hover .task-actions {
+  visibility: visible;
+}
+
+/* Form styles */
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem #4285f440;
+}
+
+/* Empty state */
+#emptyState {
+  color: #6c757d;
+}
+
+#emptyState i {
+  color: #adb5bd;
+}
+
+
+
+
+/* Header/Navbar Styles */
+.navbar {
+  background: linear-gradient(to right ,#18126edc , #2657b8 ); /* Default primary color - CHANGE THIS VALUE TO CHANGE HEADER COLOR */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .text-white {
+  color: #ffffff !important; /* Ensure text is white */
+}
+
+.navbar .btn-outline-light {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.navbar .btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #4285f4; /* Change text color on hover */
+}
+.footer {
+ background: linear-gradient(to right ,#cacaca , #d0d2d6 );
+ color: #000000;
+}
+
